@@ -4320,7 +4320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Username
+  m_Text: Nome e Cognome
 --- !u!222 &833578871
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8627,6 +8627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872777550}
   - component: {fileID: 1872777551}
+  - component: {fileID: 1872777552}
   m_Layer: 5
   m_Name: EventiSalvati
   m_TagString: Untagged
@@ -8681,6 +8682,20 @@ MonoBehaviour:
   prenotato: 
   testiprecedenti: []
   loadedTexture: {fileID: 0}
+  factory: {fileID: 1872777552}
+--- !u!114 &1872777552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872777549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc284aaad4f2b4d47ab762c9be4d7778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2103620357, guid: fc8f8d047d1a55a47be65083b2ca94d3, type: 3}
 --- !u!1 &1889745097
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,6 +27,9 @@ public class FetchEvents : MonoBehaviour
   public Text[] testiprecedenti;
 
   public Texture2D loadedTexture;
+
+  [SerializeField]
+  private RawImageFactory factory;
     // Start is called before the first frame update
     void Start()
     {
@@ -98,7 +101,7 @@ public class FetchEvents : MonoBehaviour
                   
                   if(checkSameBox(formattedDesc) == false)
                   {
-                    instantiatedContent = Instantiate(contentPrefab, eventsGroup);
+                    instantiatedContent = factory.GetNewInstance(eventsGroup);
                     instantiatedContent.GetComponent<Unsubscribe>().setId(int.Parse(line[7]));
                     
                     Image[] images = instantiatedContent.GetComponentsInChildren<Image>();

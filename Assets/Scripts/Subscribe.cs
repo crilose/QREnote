@@ -63,10 +63,19 @@ public class Subscribe : MonoBehaviour
               print (responseText);
               if(string.Equals(responseText, "pieno"))
               {
+                alert.appearNotifica();
                 alert.setNotificaText("Siamo spiacenti, l'evento è pieno!", "Al completo!");
               }
+
+              if(string.Equals(responseText, "inesistente"))
+              {
+                alert.appearNotifica();
+                alert.setNotificaText("Siamo spiacenti, l'evento non risulta nel database!", "Non esiste!");
+              }
+
               else
               {
+                alert.appearNotifica();
                 alert.setNotificaText("Premi per tornare indietro!", "Iscritto!");
               }
 
